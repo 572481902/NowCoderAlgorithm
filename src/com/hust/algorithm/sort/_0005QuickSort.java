@@ -3,7 +3,7 @@ package com.hust.algorithm.sort;
 import com.hust.algorithm.utils.AlgorithmUtils;
 import org.junit.Test;
 
-public class QuickSort0005 {
+public class _0005QuickSort {
 
     public void sortFun(Integer[] beSortedArr, int startIndex, int endIndex) {
 

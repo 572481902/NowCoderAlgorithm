@@ -16,6 +16,8 @@ public class AlgorithmUtils {
 
         }
 
+        System.out.println();
+
     }
 
 
@@ -62,6 +64,24 @@ public class AlgorithmUtils {
         }
 
         return new Integer[]{index, minNum};
+
+    }
+
+
+    public static void swapIntegerPosition(Integer[] arr, int firstIndex, int secondIndex) {
+
+        if (firstIndex >=0 && firstIndex <= arr.length - 1 && secondIndex >=0 && secondIndex <= arr.length - 1) {
+
+            int temp = arr[firstIndex];
+            arr[firstIndex] = arr[secondIndex];
+            arr[secondIndex] = temp;
+
+        } else {
+
+            throw new RuntimeException("数组下标有误 ......");
+
+        }
+
 
     }
 

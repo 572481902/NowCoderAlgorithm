@@ -3,7 +3,7 @@ package com.hust.algorithm.sort;
 import com.hust.algorithm.utils.AlgorithmUtils;
 import org.junit.Test;
 
-public class InsertSort0003 {
+public class _0003InsertSort {
 
     public void sortFun(Integer[] beSortedArr) {
 

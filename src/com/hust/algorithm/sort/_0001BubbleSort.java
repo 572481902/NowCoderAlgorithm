@@ -3,7 +3,7 @@ package com.hust.algorithm.sort;
 import com.hust.algorithm.utils.AlgorithmUtils;
 import org.junit.Test;
 
-public class BubbleSort0001 {
+public class _0001BubbleSort {
 
     public void sortFun(Integer[] arr) {
 
@@ -42,11 +42,11 @@ public class BubbleSort0001 {
 
         Integer[] integers = AlgorithmUtils.genDisorderArr();
 
-        sortFun(integers);
-
         AlgorithmUtils.arrPrint(integers);
 
         sortFun(integers);
+
+        AlgorithmUtils.arrPrint(integers);
 
     }
 

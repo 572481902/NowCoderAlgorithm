@@ -3,7 +3,7 @@ package com.hust.algorithm.sort;
 import com.hust.algorithm.utils.AlgorithmUtils;
 import org.junit.Test;
 
-public class MergerSort0004 {
+public class _0004MergerSort {
 
     public void mergeArr(Integer[] arr, int startIndex, int midIndex, int endIndex) {
 
