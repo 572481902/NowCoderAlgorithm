@@ -67,7 +67,12 @@ public class AlgorithmUtils {
 
     }
 
-
+    /**
+     * 交换数组中两个元素位置
+     * @param arr
+     * @param firstIndex    待交换位置索引1
+     * @param secondIndex   待交换位置索引2
+     */
     public static void swapIntegerPosition(Integer[] arr, int firstIndex, int secondIndex) {
 
         if (firstIndex >=0 && firstIndex <= arr.length - 1 && secondIndex >=0 && secondIndex <= arr.length - 1) {
@@ -82,6 +87,20 @@ public class AlgorithmUtils {
 
         }
 
+    }
+
+
+    public static Integer[] toIntegerArr(int[] intArr) {
+
+        Integer[] resultArr = new Integer[intArr.length];
+
+        for (int i = 0; i < intArr.length; ++i) {
+
+            resultArr[i] = intArr[i];
+
+        }
+
+        return resultArr;
 
     }
 
