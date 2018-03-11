@@ -104,4 +104,18 @@ public class AlgorithmUtils {
 
     }
 
+    public static int[] toIntArr(Integer[] integerArr) {
+
+        int[] resultArr = new int[integerArr.length];
+
+        for (int i = 0; i < integerArr.length; i++) {
+
+            resultArr[i] = integerArr[i];
+
+        }
+
+        return resultArr;
+
+    }
+
 }
