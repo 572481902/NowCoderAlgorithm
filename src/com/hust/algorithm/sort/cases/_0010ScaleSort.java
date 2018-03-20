@@ -1,4 +1,4 @@
-package com.hust.algorithm.sort;
+package com.hust.algorithm.sort.cases;
 
 import com.hust.algorithm.utils.AlgorithmUtils;
 import org.junit.Test;
