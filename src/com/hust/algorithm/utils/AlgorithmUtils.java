@@ -20,6 +20,22 @@ public class AlgorithmUtils {
 
     }
 
+    /**
+     * 打印数组
+     * @param arr : 待打印数组
+     */
+    public static void arrIntPrint(int[] arr) {
+
+        for (int i = 0; i < arr.length; ++i) {
+
+            System.out.print(arr[i] + "\t");
+
+        }
+
+        System.out.println();
+
+    }
+
 
     /**
      * 随机生成长度为10的整形数组
