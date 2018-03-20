@@ -73,6 +73,28 @@ public class AlgorithmUtils {
      * @param firstIndex    待交换位置索引1
      * @param secondIndex   待交换位置索引2
      */
+    public static void swapIntegerPosition(int[] arr, int firstIndex, int secondIndex) {
+
+        if (firstIndex >=0 && firstIndex <= arr.length - 1 && secondIndex >=0 && secondIndex <= arr.length - 1) {
+
+            int temp = arr[firstIndex];
+            arr[firstIndex] = arr[secondIndex];
+            arr[secondIndex] = temp;
+
+        } else {
+
+            throw new RuntimeException("数组下标有误 ......");
+
+        }
+
+    }
+
+    /**
+     * 交换数组中两个元素位置
+     * @param arr
+     * @param firstIndex    待交换位置索引1
+     * @param secondIndex   待交换位置索引2
+     */
     public static void swapIntegerPosition(Integer[] arr, int firstIndex, int secondIndex) {
 
         if (firstIndex >=0 && firstIndex <= arr.length - 1 && secondIndex >=0 && secondIndex <= arr.length - 1) {
