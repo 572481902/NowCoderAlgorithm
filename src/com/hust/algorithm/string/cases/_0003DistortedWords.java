@@ -1,4 +1,4 @@
-package com.hust.algorithm.string;
+package com.hust.algorithm.string.cases;
 
 import org.junit.Test;
 

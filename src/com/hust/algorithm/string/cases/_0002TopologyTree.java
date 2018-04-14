@@ -1,5 +1,6 @@
-package com.hust.algorithm.string;
+package com.hust.algorithm.string.cases;
 
+import com.hust.algorithm.string._0001KmpAlgorithm;
 import org.junit.Test;
 
 /**
