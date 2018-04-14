@@ -2,7 +2,7 @@ package com.hust.algorithm.string.cases;
 
 import org.junit.Test;
 
-public class _0005StringShift {
+public class _0006StringShift {
 
     public String shiftByIndex(String target, int index) {
 
