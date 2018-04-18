@@ -2,8 +2,6 @@ package com.hust.algorithm.link;
 
 import org.junit.Test;
 
-import java.util.LinkedList;
-
 public class _0001LinkListReverse {
 
     public static class Node {
