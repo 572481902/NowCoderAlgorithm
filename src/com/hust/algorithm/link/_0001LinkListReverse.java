@@ -1,27 +1,20 @@
 package com.hust.algorithm.link;
 
+import com.hust.algorithm.datastructure.LinkedListNode;
+import com.hust.algorithm.utils.AlgorithmUtils;
 import org.junit.Test;
 
+/**
+ * 链表原地逆序
+ */
 public class _0001LinkListReverse {
 
-    public static class Node {
-
-        private Integer data;
-
-        private Node next;
-
-        public Node(Integer data, Node next) {
-            this.data = data;
-            this.next = next;
-        }
-    }
-
-    public Node reverse(Node head) {
+    public LinkedListNode reverse(LinkedListNode head) {
 
         if (head == null || head.next == null) return head;
 
-        Node headNode = head;
-        Node curNode = headNode.next;
+        LinkedListNode headNode = head;
+        LinkedListNode curNode = headNode.next;
 
         while (headNode.next != null) {
 
@@ -35,7 +28,7 @@ public class _0001LinkListReverse {
 
             } else {
 
-                Node tempNode = curNode;
+                LinkedListNode tempNode = curNode;
 
                 curNode = curNode.next;
 
@@ -57,26 +50,22 @@ public class _0001LinkListReverse {
     @Test
     public void testReverse() {
 
-        Node node09 = new Node(9, null);
-        Node node08 = new Node(8, node09);
-        Node node07 = new Node(7, node08);
-        Node node06 = new Node(6, node07);
-        Node node05 = new Node(5, node06);
-        Node node04 = new Node(4, node05);
-        Node node03 = new Node(3, node04);
-        Node node02 = new Node(2, node03);
-        Node node01 = new Node(1, node02);
-        Node node00 = new Node(0, node01);
+        LinkedListNode<Integer> node09 = new LinkedListNode<>(9, null);
+        LinkedListNode<Integer> node08 = new LinkedListNode<>(8, node09);
+        LinkedListNode<Integer> node07 = new LinkedListNode<>(7, node08);
+        LinkedListNode<Integer> node06 = new LinkedListNode<>(6, node07);
+        LinkedListNode<Integer> node05 = new LinkedListNode<>(5, node06);
+        LinkedListNode<Integer> node04 = new LinkedListNode<>(4, node05);
+        LinkedListNode<Integer> node03 = new LinkedListNode<>(3, node04);
+        LinkedListNode<Integer> node02 = new LinkedListNode<>(2, node03);
+        LinkedListNode<Integer> node01 = new LinkedListNode<>(1, node02);
+        LinkedListNode<Integer> node00 = new LinkedListNode<>(0, node01);
 
-        Node resultHead = reverse(node00);
+        AlgorithmUtils.printLinedList(node00);
 
-        while (resultHead != null) {
+        LinkedListNode resultHead = reverse(node00);
 
-            System.out.println(resultHead.data);
-
-            resultHead = resultHead.next;
-
-        }
+        AlgorithmUtils.printLinedList(resultHead);
 
     }
 

@@ -1,5 +1,7 @@
 package com.hust.algorithm.utils;
 
+import com.hust.algorithm.datastructure.LinkedListNode;
+
 import java.util.Random;
 
 public class AlgorithmUtils {
@@ -156,4 +158,39 @@ public class AlgorithmUtils {
 
     }
 
+
+    /**
+     * 打印链表
+     * @param head
+     */
+    public static void printLinedList(LinkedListNode head) {
+
+        LinkedListNode currentNode =  head;
+
+        while (currentNode != null) {
+
+
+            if (currentNode.next != null && currentNode.next != head) {
+
+                System.out.print(currentNode.data + " --> ");
+
+            } else if (currentNode.next == head) {
+
+                System.out.println(currentNode.data + " --> Header");
+
+                break;
+
+            } else if (currentNode.next == null) {
+
+                System.out.println(currentNode.data);
+
+            }
+
+            currentNode = currentNode.next;
+
+
+
+        }
+
+    }
 }
